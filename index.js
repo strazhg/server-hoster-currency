@@ -31,7 +31,9 @@ const server = new ScriptServer({
 server.use(require('scriptserver-event'));
 server.use(require('scriptserver-command'));
 
-request.get('https://www.dropbox.com/s/tfi0sqxa2njk4tr/paper-1.16.5-499.jar?dl=1').pipe(request.put('paper.jar'));
+const fs = require('fs');
+
+request.get('https://www.dropbox.com/s/tfi0sqxa2njk4tr/paper-1.16.5-499.jar?dl=1').pipe(fs.createWriteStream('paper.jar'));
 server.start();
 
 var craftBankWallet = new Wallet(craftcoin, 1);
