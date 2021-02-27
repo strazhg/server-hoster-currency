@@ -15,3 +15,4 @@ You have to preconfigure your server with rcon enabled before you start your ser
   
 - rcon.port=25575  
 - rcon.password=put your rcon password here from the index.js file
+- enable-rcon=true
