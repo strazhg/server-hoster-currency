@@ -1,0 +1,17 @@
+{
+  "name": "mcserver-currency",
+  "version": "1.0.0",
+  "description": "a minecraft currency for servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Posessed_Demon",
+  "license": "ISC",
+  "dependencies": {
+    "blockchain-lib": "file:../blockchain-lib",
+    "request": "^2.88.2",
+    "scriptserver": "^1.2.0",
+    "scriptserver-command": "^1.0.1"
+  }
+}
