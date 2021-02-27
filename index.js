@@ -1,4 +1,4 @@
-const blockchain_lib = require('blockchain-lib');
+const blockchain_lib = require('blockchain-lib/index.js');
 
 const Blockchain = blockchain_lib.Blockchain;
 const Transaction = blockchain_lib.Transaction;
