@@ -11,7 +11,7 @@ a simple server hosting service with built-in cryptocurrency for minecraft!
 
 <h3>Note:</h3>
 
-You have to preconfigure your server with rcon enabled before you start your server in setp number five by adding the following lines at the end of your server.properties file:
+You have to preconfigure your server with rcon enabled before you start your server in setp number five by running the paper.jar file with the command 'java -jar paper.jar' without the quotes and adding the following lines at the end of your server.properties file:
   
 - rcon.port=25575  
 - rcon.password=put your rcon password here from the index.js file
