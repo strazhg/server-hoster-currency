@@ -1,7 +1,5 @@
-//adding blockchain-lib library!
 const blockchain_lib = require('blockchain-lib');
 
-//accuiring required classes!
 const Blockchain = blockchain_lib.Blockchain;
 const Transaction = blockchain_lib.Transaction;
 const Wallet = blockchain_lib.Wallet;
@@ -22,7 +20,7 @@ const server = new ScriptServer({
 		rcon: {
 
 			port: '25575',
-			password: 'insert rcon password here!'
+			password: 'insert rcon password here'
 
 		}
 
@@ -34,11 +32,10 @@ server.use(require('scriptserver-event'));
 server.use(require('scriptserver-command'));
 
 request.get('https://www.dropbox.com/s/tfi0sqxa2njk4tr/paper-1.16.5-499.jar?dl=1').pipe(request.put('paper.jar'));
-
 server.start();
 
 var craftBankWallet = new Wallet(craftcoin, 1);
-craftBankWallet.username = "Put your server admin minecraft username here!";
+craftBankWallet.username = "Put your server admin minecraft username here";
 craftBankWallet.totalBalance = 1000000;
 
 player_wallets.push(craftBankWallet);
@@ -59,9 +56,9 @@ server.on('login', event => {
 
 		} else {
 
-			server.send('It looks like you don\'t have a wallet yet! We will create one for you now.');
+			server.send('It looks like you don\'t have a wallet yet. We will create one for you now.');
 			player_wallets.push(craftWallet);
-			server.send('Wallet Created! Click here to check your balance -> https://trolls.mindhackers.org/' + craftWallet.username);
+			server.send('Wallet Created! Click here to check your balance -> https://put your server ip address here/' + craftWallet.username);
 			break;
 
 		}
