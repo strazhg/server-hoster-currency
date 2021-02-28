@@ -13,7 +13,7 @@ const server = new ScriptServer({
 
 	core: {
 
-		jar: 'paper.jar',
+		jar: 'spigot.jar',
 		args: ['-Xmx1024M'],
 		rcon: {
 
