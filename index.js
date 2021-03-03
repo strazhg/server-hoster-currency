@@ -13,8 +13,8 @@ const server = new ScriptServer({
 
 	core: {
 
-		jar: 'spigot.jar',
-		args: ['-Xmx1024M'],
+		jar: 'paper.jar',
+		args: ['-Xmx1024M', '-Xms1024M'],
 		rcon: {
 
 			port: '25575',
