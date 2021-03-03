@@ -6,7 +6,8 @@ a simple server hosting service with built-in cryptocurrency for minecraft!
 2. Replace where it says 'Insert rcon password here' with your server's rcon password.
 3. Replace where it says 'Put your server admin minecraft username here' with the server admin's username.
 4. Replace where it says 'Put your server ip address here' with your minecraft server's ip address.
-5. Done! You can now start your server by running the command, 'node index.js' without the quotes!
+5. Install the library blockchain-lib by going to the blockchain-lib repository and cloning it into the node_modules folder (https://github.com/strazhg/blockchain-lib.git).
+6. Done! You can now start your server by running the command, 'node index.js' without the quotes!
 
 
 <h3>Note:</h3>
